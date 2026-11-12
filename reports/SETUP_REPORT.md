@@ -187,7 +187,7 @@ Reverses the earlier "deferred" recommendation per explicit user request.
 # SYNC 2026-11-13 — GitHub remote configured
 
 - Repo: https://github.com/shashicode2n4mcoffee/kimi-engineering-system
-  (**private**), branch `main`, remote `origin` configured in `~/.kimi`.
+  (**public** since 2026-11-13, secret-scanned first), branch `main`, remote `origin` configured in `~/.kimi`.
 - `gh` CLI 2.104.0 authenticated (user-level, `~/.local/gh`).
 - Commit `d6f0c9f` pushed: AGENTS.md, 11 skills, 17 commands, reports,
   handoffs, .gitignore.
