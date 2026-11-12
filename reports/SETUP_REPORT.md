@@ -181,3 +181,26 @@ Reverses the earlier "deferred" recommendation per explicit user request.
 - Maintenance: after a @playwright/mcp upgrade, re-install the browser and
   update the pinned --executable-path.
 - Classification: Installed, Configured, **Actively verified**.
+
+---
+
+# SYNC 2026-11-13 — GitHub remote configured
+
+- Repo: https://github.com/shashicode2n4mcoffee/kimi-engineering-system
+  (**private**), branch `main`, remote `origin` configured in `~/.kimi`.
+- `gh` CLI 2.104.0 authenticated (user-level, `~/.local/gh`).
+- Commit `d6f0c9f` pushed: AGENTS.md, 11 skills, 17 commands, reports,
+  handoffs, .gitignore.
+
+## Syncing to a new device
+
+1. `gh auth login` (once per device)
+2. `git clone https://github.com/shashicode2n4mcoffee/kimi-engineering-system.git ~/.kimi`
+3. Rewire Kimi Code: `ln -s ~/.kimi/AGENTS.md ~/.kimi-code/AGENTS.md` and
+   `ln -s ~/.kimi/skills ~/.kimi-code/skills`
+4. Add to `~/.kimi-code/config.toml`: `extra_skill_dirs = ["~/.kimi/commands"]`
+5. Tooling (not in the repo): `~/.local/bin` needs rtk, headroom, node
+   symlinks; Playwright MCP needs `~/.kimi-code/mcp.json` + node.
+6. Day-to-day: `cd ~/.kimi && git pull` before starting work;
+   `git add -A && git commit -m "..." && git push` after changing skills,
+   commands or instructions.
